@@ -97,6 +97,9 @@ def process_word(word):
     return True
 
 
+search_file = os.path.join(current_dir, 'search_words.txt')
+if os.path.isfile(search_file):
+    raise ValueError("Please add search_words.txt file.")
 all_words = open(os.path.join(current_dir, 'search_words.txt'),
                  'r', encoding='utf8').read().split('\n')
 
@@ -115,7 +118,7 @@ def handle_word(word):
 
 if __name__ == "__main__":
     with concurrent.futures.ProcessPoolExecutor() as executor:
-        futures = {executor.submit(handle_word, word)                   : word for word in all_words}
+        futures = {executor.submit(handle_word, word): word for word in all_words}
         for future in concurrent.futures.as_completed(futures):
             pass
     # for word in all_words:
