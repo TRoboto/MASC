@@ -18,7 +18,7 @@ python3 search.py
 python3 append_country.py
 ```
 
-5- Run `remove_duplicates.py' to remove duplicates in the csv file.
+5- Run `remove_duplicates.py` to remove duplicates in the csv file.
 
 ```
 python3 remove_duplicates.py
