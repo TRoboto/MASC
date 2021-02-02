@@ -34,4 +34,4 @@ python3 filter_search.py
 
 8- Run `add_complete.py` to move the channels inside `need_check.csv` to `processed_channels.txt` file.
 
-9- You can now add more words are repeats all the steps to get more videos.
+9- You can now add more words and repeats all the steps to get more videos.
